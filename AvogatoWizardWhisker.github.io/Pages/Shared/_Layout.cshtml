@@ -1,18 +1,32 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme:"dark">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - AvogatoWizardWhisker.github.io</title>
+    <title>@ViewData["Title"] - AvogatoWizardWhisker</title> 
+    <meta name="description" content="Explore my boring website I made from scratch">
+
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AvogatoWizardWhisker.github.io.styles.css" asp-append-version="true" />
+    <meta name="theme-color" content="#dd940d" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="canonical" href="https://avogatowizardwhisker.azurewebsites.net/">
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://avogatowizardwhisker.azurewebsites.net/" />
+    <meta property="og:title" content="@ViewData["Title"] - AvogatoWizardWhisker" />
+    <meta property="og:description" content="Explore my boring website I made from scratch" />
+    <meta property="og:image" content="https://th.bing.com/th/id/OIG4.5ciYccEwHNmxLw85p0fI?pid=ImgGn" />
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary" />
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">AvogatoWizardWhisker.github.io</a>
+                <a class="navbar-brand" asp-area="" asp-page="/Index">AvogatoWizardWhisker</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -23,8 +37,17 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link text-black" asp-area="" asp-page="/ProLang" title="Programming Languages">Prog. Languages</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" asp-area="" asp-page="/Tools">Tools</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" asp-area="" asp-page="/Setup">My Setup</a>
+                        </li>
+                        @* <li class="nav-item">
+                            <a class="nav-link text-black" asp-area="" asp-page="/Blogs">My blogs</a>
+                        </li> *@
                     </ul>
                 </div>
             </div>
@@ -38,7 +61,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - AvogatoWizardWhisker.github.io - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2024 - AvogatoWizardWhisker
         </div>
     </footer>
 
